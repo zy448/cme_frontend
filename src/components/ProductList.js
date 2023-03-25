@@ -5,15 +5,15 @@ import withContext from "../withContext";
 const ProductList = props => {
   const { products } = props.context;
   return (
-    <Fragment>
-      <div className="hero is-primary">
-        <div className="hero-body container">
+    <Fragment >
+      <div className="hero ">
+        <div className="hero-body container text-center">
           <h4 className="title">Our Products</h4>
         </div>
       </div>
       <br />
-      <div className="container">
-        <div className="column columns is-multiline">
+      <div className="container products-bg" >
+        <div className="column columns is-multiline ">
           {products && products.length ? (
             products.map((product, index) => (
               <ProductItem

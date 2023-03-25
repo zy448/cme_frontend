@@ -115,7 +115,7 @@ export default class App extends Component {
               aria-label="main navigation"
             >
               <div className="navbar-brand">
-                <b className="navbar-item is-size-4 ">E-Commerce</b>
+                <b className="navbar-item is-size-4 fs-2">E-Commerce</b>
 
                 <a
                   href="/"
@@ -139,15 +139,15 @@ export default class App extends Component {
                   this.state.showMenu ? "is-active" : ""
                 }`}
               >
-                <Link to="/products" className="navbar-item">
+                <Link to="/products" className="navbar-item fs-4">
                   Products
                 </Link>
                 {this.state.user && this.state.user.accessLevel < 1 && (
-                  <Link to="/add-product" className="navbar-item">
+                  <Link to="/add-product" className="navbar-item fs-4">
                     Add Product
                   </Link>
                 )}
-                <Link to="/cart" className="navbar-item">
+                <Link to="/cart" className="navbar-item fs-4">
                   Cart
                   <span
                     className="tag is-primary"
@@ -157,11 +157,11 @@ export default class App extends Component {
                   </span>
                 </Link>
                 {!this.state.user ? (
-                  <Link to="/login" className="navbar-item">
+                  <Link to="/login" className="navbar-item fs-4">
                     Login
                   </Link>
                 ) : (
-                  <a href="/" className="navbar-item" onClick={this.logout}>
+                  <a href="/" className="navbar-item fs-4" onClick={this.logout}>
                     Logout
                   </a>
                 )}
